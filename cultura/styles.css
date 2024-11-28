@@ -1,0 +1,83 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral do body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Estilo do header e navegação */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo do conteúdo principal */
+main {
+    text-align: center;
+    padding: 2rem;
+}
+
+main h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+main p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #555;
+}
+
+/* Estilo da galeria de imagens */
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 1rem; /* Espaçamento entre imagens */
+    flex-wrap: wrap; /* Permite que as imagens se ajustem em telas menores */
+}
+
+.image-gallery img {
+    width: 30%; /* Todas as imagens terão a mesma largura */
+    height: auto; /* Mantém a proporção */
+    border-radius: 8px;
+    object-fit: cover; /* Garante que o conteúdo da imagem seja bem ajustado */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.image-gallery img:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+    transition: transform 0.3s ease;
+}
+
